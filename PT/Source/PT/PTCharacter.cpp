@@ -49,6 +49,11 @@ APTCharacter::APTCharacter(const FObjectInitializer& ObjectInitializer) :
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
+void APTCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 

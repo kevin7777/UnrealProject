@@ -30,7 +30,9 @@ public:
 	float BaseLookUpRate;
 
 protected:
+	virtual void PossessedBy(AController* NewController) override;
 
+protected:
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();
 
@@ -69,4 +71,3 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
-

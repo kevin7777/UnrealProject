@@ -9,10 +9,7 @@
 UCLASS(minimalapi)
 class APTGameMode : public AGameModeBase
 {
-	GENERATED_BODY()
-
-public:
-	APTGameMode();
+	GENERATED_UCLASS_BODY()
 };
 
 
