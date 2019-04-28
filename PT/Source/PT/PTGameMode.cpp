@@ -3,6 +3,7 @@
 #include "PTGameMode.h"
 #include "PTCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "PTPlayerController.h"
 
 APTGameMode::APTGameMode(const FObjectInitializer& ObjectInitializer) :
 	Super(ObjectInitializer)
@@ -13,4 +14,6 @@ APTGameMode::APTGameMode(const FObjectInitializer& ObjectInitializer) :
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+
+	PlayerControllerClass = APTPlayerController::StaticClass();
 }

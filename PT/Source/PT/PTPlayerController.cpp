@@ -6,3 +6,8 @@ APTPlayerController::APTPlayerController(const FObjectInitializer& ObjectInitial
 	Super(ObjectInitializer)
 {
 }
+
+void APTPlayerController::OnPossess(APawn* aPawn)
+{
+	Super::OnPossess(aPawn);
+}

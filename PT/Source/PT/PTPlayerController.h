@@ -10,4 +10,7 @@ UCLASS()
 class PT_API APTPlayerController : public APlayerController
 {
 	GENERATED_UCLASS_BODY()
+
+protected:
+	virtual void OnPossess(APawn* aPawn) override;
 };
