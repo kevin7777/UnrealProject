@@ -4,6 +4,7 @@
 #include "PTCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "PTPlayerController.h"
+#include "PTHUD.h"
 
 APTGameMode::APTGameMode(const FObjectInitializer& ObjectInitializer) :
 	Super(ObjectInitializer)
@@ -16,4 +17,6 @@ APTGameMode::APTGameMode(const FObjectInitializer& ObjectInitializer) :
 	}
 
 	PlayerControllerClass = APTPlayerController::StaticClass();
+
+	HUDClass = APTHUD::StaticClass();
 }
