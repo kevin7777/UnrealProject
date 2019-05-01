@@ -7,6 +7,16 @@ APTPlayerController::APTPlayerController(const FObjectInitializer& ObjectInitial
 {
 }
 
+void APTPlayerController::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+}
+
+void APTPlayerController::PlayerTick(float DeltaTime)
+{
+	Super::PlayerTick(DeltaTime);
+}
+
 void APTPlayerController::OnPossess(APawn* aPawn)
 {
 	Super::OnPossess(aPawn);

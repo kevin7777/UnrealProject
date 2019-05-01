@@ -30,6 +30,8 @@ public:
 	float BaseLookUpRate;
 
 protected:
+	virtual void Tick(float DeltaSeconds) override;
+
 	virtual void PossessedBy(AController* NewController) override;
 
 protected:

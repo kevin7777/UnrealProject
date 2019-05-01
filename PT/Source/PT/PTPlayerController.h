@@ -12,5 +12,9 @@ class PT_API APTPlayerController : public APlayerController
 	GENERATED_UCLASS_BODY()
 
 protected:
+	virtual void Tick(float DeltaSeconds) override;
+
+	virtual void PlayerTick(float DeltaTime) override;
+
 	virtual void OnPossess(APawn* aPawn) override;
 };
