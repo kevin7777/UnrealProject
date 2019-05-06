@@ -10,7 +10,11 @@ UCLASS(minimalapi)
 class APTGameMode : public AGameModeBase
 {
 	GENERATED_UCLASS_BODY()
+
+protected:
+	virtual void BeginPlay() override;
+
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+
+	virtual void Tick(float DeltaSeconds) override;
 };
-
-
-

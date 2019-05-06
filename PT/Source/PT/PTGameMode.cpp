@@ -5,6 +5,8 @@
 #include "UObject/ConstructorHelpers.h"
 #include "PTPlayerController.h"
 #include "PTHUD.h"
+#include "PTGameState.h"
+#include "PTPlayerState.h"
 
 APTGameMode::APTGameMode(const FObjectInitializer& ObjectInitializer) :
 	Super(ObjectInitializer)
@@ -19,4 +21,23 @@ APTGameMode::APTGameMode(const FObjectInitializer& ObjectInitializer) :
 	PlayerControllerClass = APTPlayerController::StaticClass();
 
 	HUDClass = APTHUD::StaticClass();
+
+	GameStateClass = APTGameState::StaticClass();
+
+	PlayerStateClass = APTPlayerState::StaticClass();
+}
+
+void APTGameMode::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void APTGameMode::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Super::EndPlay(EndPlayReason);
+}
+
+void APTGameMode::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
 }

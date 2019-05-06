@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "PTCharacterBase.h"
 #include "PTCharacter.generated.h"
 
 UCLASS(config=Game)
-class APTCharacter : public ACharacter
+class APTCharacter : public APTCharacterBase
 {
 	GENERATED_BODY()
 
