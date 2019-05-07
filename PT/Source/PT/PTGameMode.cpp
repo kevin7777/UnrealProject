@@ -1,7 +1,6 @@
 // Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 
 #include "PTGameMode.h"
-#include "PTCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "PTPlayerController.h"
 #include "PTHUD.h"
