@@ -7,6 +7,16 @@ APTPlayerController::APTPlayerController(const FObjectInitializer& ObjectInitial
 {
 }
 
+void APTPlayerController::OnRep_Pawn()
+{
+	Super::OnRep_Pawn();
+}
+
+void APTPlayerController::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+}
+
 void APTPlayerController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
