@@ -16,6 +16,11 @@ void APTCharacterBase::BeginPlay()
 	Super::BeginPlay();
 }
 
+void APTCharacterBase::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Super::EndPlay(EndPlayReason);
+}
+
 // Called every frame
 void APTCharacterBase::Tick(float DeltaTime)
 {
@@ -26,4 +31,29 @@ void APTCharacterBase::Tick(float DeltaTime)
 void APTCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+}
+
+void APTCharacterBase::OnRep_Controller()
+{
+	Super::OnRep_Controller();
+}
+
+void APTCharacterBase::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+}
+
+void APTCharacterBase::OnRep_IsCrouched()
+{
+	Super::OnRep_IsCrouched();
+}
+
+void APTCharacterBase::OnRep_ReplicatedBasedMovement()
+{
+	Super::OnRep_ReplicatedBasedMovement();
+}
+
+void APTCharacterBase::OnRep_ReplicatedMovement()
+{
+	Super::OnRep_ReplicatedMovement();
 }
