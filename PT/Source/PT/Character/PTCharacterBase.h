@@ -22,15 +22,4 @@ protected:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-protected:
-	virtual void OnRep_Controller() override;
-
-	virtual void OnRep_PlayerState() override;
-
-	virtual void OnRep_IsCrouched() override;
-
-	virtual void OnRep_ReplicatedBasedMovement() override;
-
-	virtual void OnRep_ReplicatedMovement() override;
 };

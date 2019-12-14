@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "PTCharacterBase.h"
+#include "PTCharacter.h"
 #include "PTNPC.generated.h"
 
 UCLASS()
-class PT_API APTNPC : public APTCharacterBase
+class PT_API APTNPC : public APTCharacter
 {
 	GENERATED_UCLASS_BODY()
 };

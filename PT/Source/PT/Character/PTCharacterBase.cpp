@@ -32,28 +32,3 @@ void APTCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
-
-void APTCharacterBase::OnRep_Controller()
-{
-	Super::OnRep_Controller();
-}
-
-void APTCharacterBase::OnRep_PlayerState()
-{
-	Super::OnRep_PlayerState();
-}
-
-void APTCharacterBase::OnRep_IsCrouched()
-{
-	Super::OnRep_IsCrouched();
-}
-
-void APTCharacterBase::OnRep_ReplicatedBasedMovement()
-{
-	Super::OnRep_ReplicatedBasedMovement();
-}
-
-void APTCharacterBase::OnRep_ReplicatedMovement()
-{
-	Super::OnRep_ReplicatedMovement();
-}

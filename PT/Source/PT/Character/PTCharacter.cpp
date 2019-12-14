@@ -144,3 +144,28 @@ void APTCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+void APTCharacter::OnRep_Controller()
+{
+	Super::OnRep_Controller();
+}
+
+void APTCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+}
+
+void APTCharacter::OnRep_IsCrouched()
+{
+	Super::OnRep_IsCrouched();
+}
+
+void APTCharacter::OnRep_ReplicatedBasedMovement()
+{
+	Super::OnRep_ReplicatedBasedMovement();
+}
+
+void APTCharacter::OnRep_ReplicatedMovement()
+{
+	Super::OnRep_ReplicatedMovement();
+}

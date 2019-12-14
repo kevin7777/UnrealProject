@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "PTCharacterBase.h"
+#include "GameFramework/Character.h"
 #include "PTCharacter.generated.h"
 
 UCLASS(config=Game)
-class APTCharacter : public APTCharacterBase
+class APTCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -72,4 +72,15 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+protected:
+	virtual void OnRep_Controller() override;
+
+	virtual void OnRep_PlayerState() override;
+
+	virtual void OnRep_IsCrouched() override;
+
+	virtual void OnRep_ReplicatedBasedMovement() override;
+
+	virtual void OnRep_ReplicatedMovement() override;
 };
