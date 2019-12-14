@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "PTAnimInstanceCharacterBase.h"
+#include "PTAnimInstanceCharacter.h"
 #include "PTAnimInstanceNPC.generated.h"
 
 UCLASS()
-class PT_API UPTAnimInstanceNPC : public UPTAnimInstanceCharacterBase
+class PT_API UPTAnimInstanceNPC : public UPTAnimInstanceCharacter
 {
 	GENERATED_BODY()
 };
