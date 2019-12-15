@@ -31,3 +31,8 @@ void APTPlayerController::OnPossess(APawn* aPawn)
 {
 	Super::OnPossess(aPawn);
 }
+
+void APTPlayerController::OnUnPossess()
+{
+	Super::OnUnPossess();
+}

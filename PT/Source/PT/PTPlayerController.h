@@ -16,9 +16,13 @@ protected:
 
 	virtual void OnRep_PlayerState() override;
 
+protected:
 	virtual void Tick(float DeltaSeconds) override;
 
 	virtual void PlayerTick(float DeltaTime) override;
 
+protected:
 	virtual void OnPossess(APawn* aPawn) override;
+
+	virtual void OnUnPossess() override;
 };

@@ -2,6 +2,11 @@
 
 #include "PTCharacterMovementComponent.h"
 
+UPTCharacterMovementComponent::UPTCharacterMovementComponent(const FObjectInitializer& ObjectInitializer) :
+	Super(ObjectInitializer)
+{
+}
+
 /** Perform local movement and send the move to the server. */
 //로컬 이동을 수행하고 서버로 이동을 보냅니다.
 void UPTCharacterMovementComponent::ReplicateMoveToServer(float DeltaTime, const FVector& NewAcceleration)

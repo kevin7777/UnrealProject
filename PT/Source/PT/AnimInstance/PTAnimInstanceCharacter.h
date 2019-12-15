@@ -9,5 +9,5 @@
 UCLASS()
 class PT_API UPTAnimInstanceCharacter : public UPTAnimInstance
 {
-	GENERATED_BODY()	
+	GENERATED_UCLASS_BODY()
 };

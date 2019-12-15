@@ -9,7 +9,7 @@
 UCLASS()
 class PT_API UPTCharacterMovementComponent : public UCharacterMovementComponent
 {
-	GENERATED_BODY()
+	GENERATED_UCLASS_BODY()
 
 protected:
 	//로컬 이동을 수행하고 서버로 이동을 보냅니다.
